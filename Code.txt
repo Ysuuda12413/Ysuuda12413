@@ -1,0 +1,47 @@
+- from random import randint
+import time
+computer = randint(1,3)
+if computer == 1:
+  computer = 'dam'
+if computer == 2:
+  computer = 'la'
+if computer == 3:
+  computer = 'keo'
+print('Nhập dam,la,keo')
+playerchooses = input()
+
+print ('Bạn chọn:' + playerchooses)
+print ('---')
+time.sleep(1)
+print('Máy tính chọn:' + computer)
+print ('---')
+time.sleep (3)
+if playerchooses == 'dam':
+  if computer == 'keo':
+    print('bạn thắng')
+if playerchooses == 'dam':
+  if computer == 'la':
+    print('bạn thua')
+if playerchooses == 'dam':
+  if computer == 'dam':
+    print('bạn hoà')
+#
+elif playerchooses == 'la':
+  if computer == 'keo':
+    print(' bạn thua')
+if playerchooses == 'la':
+  if computer == 'la':
+    print('bạn hoà')
+if playerchooses == 'la':
+  if computer == 'dam':
+    print('bạn thắng')
+#
+elif playerchooses == 'keo':
+  if computer == 'keo':
+    print('bạn hoà')
+if playerchooses == 'keo':
+  if computer == 'la':
+    print('bạn thắng')
+if playerchooses == 'keo':
+  if computer == 'dam':
+    print('bạn thua')
